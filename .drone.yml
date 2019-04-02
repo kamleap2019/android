@@ -60,7 +60,7 @@ matrix:
 
 services:
     server:
-        image: nextcloudci/server:server-6
+        image: nextcloudci/server:server-7
         when:
             matrix:
                 FLAVOR: Gplay
