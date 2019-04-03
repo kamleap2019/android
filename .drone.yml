@@ -25,7 +25,6 @@ pipeline:
         when:
             matrix:
                 FLAVOR: Gplay
-                ENABLE_REDIS: true
 
     analysis:
         image: nextcloudci/android:android-44
@@ -69,4 +68,6 @@ services:
         image: redis
         when:
             matrix:
-                ENABLE_REDIS: true
+                FLAVOR: Gplay
+
+branches: master
